@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <title>MyProject</title>
+</head>
+
+<body>
+    
+<!-- <div class=" px-5 py-5 text-xl w-screen bg-[#ff80ab]"> My Home</div> -->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+    
+
+
+  
+<div class="p-2 bg-gray-200 h-screen w-screen text-center">
+    <h3 class="text-blue-700 mb-4 text-xl font-bold"> Contact US</h3>
+
+
+    <div class="bg-white  min-w-fit p-2 mx-10 my-10 md:p-10 md:mx-64 md:my-16 rounded-lg hover:shadow-2xl">
+      <h2 class="text-2xl font-bold mb-2 text-gray-800 text-decoration-line: underline">Address</h2>
+      <p class="text-gray-700 my-2">Plot no xyz, City: Delhi-1100011</p>
+      <h2 class="text-2xl font-bold mb-2 text-gray-800 text-decoration-line: underline">Developed by</h2>
+      <p class="text-gray-700 my-2">Mr. ABC ZXY</p>
+      <h2 class="text-2xl font-bold mb-2 text-gray-800 text-decoration-line: underline">Contact @</h2>
+      <p class="text-gray-700 my-2">Mobile: xxx-YYY-ZZZZ; Email: abc@zxc.com</p>
+   </div>
+
+
+
+
+
+</div>
+
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+    $.get("footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });
+    </script>
+</body>
+</html>

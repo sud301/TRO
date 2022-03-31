@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <title>MyProject</title>
+</head>
+
+<body>
+    
+<!-- <div class=" px-5 py-5 text-xl w-screen bg-[#ff80ab]"> My Home</div> -->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+    $.get("nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+
+
+<div class="flex">
+    <div id="sbar-placeholder">
+
+    </div>
+    
+    <script>
+        $.get("sbar.html", function(data){
+            $("#sbar-placeholder").replaceWith(data);
+        });
+        </script>
+
+<div class="mx-5 px-5 my-5">
+    <span class="text-2xl">Main Content</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro optio quaerat ipsum eaque nostrum nemo repellendus, assumenda soluta a cumque rerum quibusdam consequatur quae delectus, neque temporibus, aperiam sapiente facere.</p>
+ <br>
+    <span class="text-2xl">First Para</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui suscipit aut perspiciatis, odit sint rerum similique, explicabo natus enim quidem animi dolorum cumque hic optio, ad dicta! Dolores, sint ex?</p>
+
+    </div>
+</div>
+
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+    $.get("footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });
+    </script>
+
+</body>
+</html>
