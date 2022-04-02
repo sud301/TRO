@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="input.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+                ubuntu: ["Ubuntu", "sans-serif"],
+              },
+             }
+        }
+      </script>
     <title>MyProject</title>
 </head>
 
-<body>
+<body class="font-ubuntu">
     
 <!-- <div class=" px-5 py-5 text-xl w-screen bg-[#ff80ab]"> My Home</div> -->
 <div id="nav-placeholder">
